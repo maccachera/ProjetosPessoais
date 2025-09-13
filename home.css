@@ -1,0 +1,93 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+}
+
+.Topo {
+      text-align: center; 
+      padding: 20px;
+      background-color: #3a83e4;
+}
+
+header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      
+}
+
+.linksTopo ul {
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; 
+      gap: 20px; 
+}
+
+.linksTopo a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+}
+
+.linksTopo a:hover {
+      color: rgb(0, 0, 0);
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+    width: 800px;
+    height: 400px;
+    background-image: url(Projeto\ Redimensionar\ imagem.png);
+    
+}
+
+.idiomaBotao {
+    margin-left: 70%;
+}
+
+
+
+@media (max-width: 600px) {
+  .Topo {
+    padding: 14px;
+  }
+
+  header {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* transforma o nav em coluna para telas estreitas */
+  .linksTopo ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .linksTopo a {
+    font-size: 16px;
+    padding: 6px 12px;
+    display: inline-block;
+  }
+
+  .container {
+    width: 95%;
+    height: 260px;
+  }
+
+  /* botão de idioma alinhado abaixo do header no mobile */
+  .idiomaBotao {
+    position: static;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
 </head>
-    <script src="script.js"></script>
+    
 <body>
-    <section class="header">
-        <header>Header</header>
-        <nav>
+    <section class="Topo">
+        <header data-key="projects">Projetos</header> 
+        
+        <nav class="linksTopo">
             <ul>
-                <li><a href="problema.html">problema</a></li>
-                <li><a href="sobre.html"> sobre</a></li>
-                
+                <li><a href="problema.html" data-key="problem">problema</a></li>
+                <li><a href="sobre.html" data-key="about">sobre</a></li>
             </ul>
-        </nav>s
+        </nav>
+
+        <label class="idiomaBotao" for="idioma" data-key="chooseLanguage">Escolha o idioma:</label>
+        <select id="idioma" onchange="traduzirPagina()">
+            <option value="pt">🇧🇷 Português</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="de">🇩🇪 Deutsch</option>
+        </select>
+
     </section>
+
+    <div class="container">
+
+    </div>
     
 
-    
+        <script  src="script.js"></script>
 </body>
 </html>
